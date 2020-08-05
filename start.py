@@ -541,7 +541,7 @@ def clBot(op):
 
 #---------------------------------- START FITUR MEDIA ---------------------------------------#   
             elif text.lower() == 'myip':
-                r = requests.get("http://dbspublic.my.id/api/myip.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj")
+                r = requests.get("https://dbspublic.my.id/api/myip.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj")
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -552,7 +552,7 @@ def clBot(op):
             elif text.lower().startswith("wallpaper "):
                 sep = text.split(" ")
                 q = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/wallpaper.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(q))
+                r = requests.get("https://dbspublic.my.id/api/wallpaper.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(q))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -567,7 +567,7 @@ def clBot(op):
             elif text.lower().startswith("tiktok "):
                 sep = text.split(" ")
                 url = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/tiktok.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&url="+str(url))
+                r = requests.get("https://dbspublic.my.id/api/tiktok.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&url="+str(url))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -579,7 +579,7 @@ def clBot(op):
             elif text.lower().startswith("ssweb "):
                 sep = text.split(" ")
                 url = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/ssweb.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&url="+str(url))
+                r = requests.get("https://dbspublic.my.id/api/ssweb.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&url="+str(url))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -591,7 +591,7 @@ def clBot(op):
             elif text.lower().startswith("shalat "):
                 sep = text.split(" ")
                 city = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/shalat.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(city))
+                r = requests.get("https://dbspublic.my.id/api/shalat.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(city))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -602,7 +602,7 @@ def clBot(op):
             elif text.lower().startswith("cuaca "):
                 sep = text.split(" ")
                 city = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/cuaca.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(city))
+                r = requests.get("https://dbspublic.my.id/api/cuaca.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(city))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -614,7 +614,7 @@ def clBot(op):
             elif text.lower().startswith("giphy "):
                 sep = text.split(" ")
                 key = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/gif.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(key))
+                r = requests.get("https://dbspublic.my.id/api/gif.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(key))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -629,7 +629,7 @@ def clBot(op):
             elif text.lower().startswith("redtube "):
                 sep = text.split(" ")
                 key = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/redtube.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(key))
+                r = requests.get("https://dbspublic.my.id/api/redtube.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(key))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
@@ -645,7 +645,7 @@ def clBot(op):
             elif text.lower().startswith("eporner "):
                 sep = text.split(" ")
                 key = text.replace(sep[0] + " ","")
-                r = requests.get("http://dbspublic.my.id/api/porn.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(key))
+                r = requests.get("https://dbspublic.my.id/api/porn.php?apikey=pynjn1CC68wwVue7Psn0MYzbJb88Fj&q="+str(key))
                 data = r.text
                 a = json.loads(data)
                 cl.sendMessage(to, "Tunggu sebentar...")
